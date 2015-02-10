@@ -32,7 +32,9 @@ ExportResultFile <- paste(GlobalPath," independent_tidy_data.txt"      , sep =""
 ActivityLabelsFile <- paste(GlobalPath,"activity_labels.txt", sep ="")
 FeaturesLabelFiles <- paste(GlobalPath,"features.txt", sep ="")
 
-#pattern for regular expression to filtre the column name
+#pattern for regular expression to filtre the column name : 
+# -mean() and -std() in the files
+# the column of ActivityName and isSubject
 ThePattern <- '-mean\\(\\)|-std\\(\\)|ActivityName|idSubject'
 
 importActivityLabelsFile <- function()
