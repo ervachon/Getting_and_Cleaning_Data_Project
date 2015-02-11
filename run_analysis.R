@@ -30,7 +30,7 @@ ExportResultFile <- paste(GlobalPath," independent_tidy_data.txt"      , sep =""
 
 # labels
 ActivityLabelsFile <- paste(GlobalPath,"activity_labels.txt", sep ="")
-FeaturesLabelFiles <- paste(GlobalPath,"features.txt", sep ="")
+FeaturesLabelFile  <- paste(GlobalPath,"features.txt", sep ="")
 
 #pattern for regular expression to filtre the column name : 
 # -mean() and -std() in the files
@@ -52,8 +52,8 @@ importActivityLabelsFile <- function()
 importFeaturesLabelsFile <- function()
 {
     #import file
-    TheFile <- read.table(FeaturesLabelFiles)
-
+    TheFile <- read.table(FeaturesLabelFile)
+    
     #rename the columns
     colnames(TheFile) <- c("idFeature","Feature")
     
@@ -88,11 +88,11 @@ importDataFiles <- function(DataFile,ColumnFile,SubjectFile)
 
 #Labels files
 MyActivityLabels <- importActivityLabelsFile()
-MyFeaturesLabels <- importFeaturesLabelsFiles()
+MyFeaturesLabels <- importFeaturesLabelsFile()
 
 #Data files
 MyTest  <- importDataFiles(TestDataFile,TestDataLabels,TestDataSubject)
-MyTrain <- importDataFile(TrainDataFile,TrainDataLabels,TrainDataSubject)
+MyTrain <- importDataFiles(TrainDataFile,TrainDataLabels,TrainDataSubject)
 
 #Merge the two files and 
 TmpDataResult <- rbind(MyTrain,MyTest)
@@ -105,8 +105,8 @@ MyDataResult <- TmpDataResult[,TheResultOfRegularExpression]
 
 #calculate the mean by ActivityName, idSubject
 MyMeanResult <- MyDataResult %>% 
-                    group_by(ActivityName, idSubject) %>% 
-                        summarise_each(funs(mean))
+    group_by(ActivityName, idSubject) %>% 
+    summarise_each(funs(mean))
 #export the results
 write.table(MyMeanResult,ExportResultFile, row.name=FALSE)
 
