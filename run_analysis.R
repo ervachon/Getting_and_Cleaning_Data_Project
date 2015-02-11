@@ -49,7 +49,7 @@ importActivityLabelsFile <- function()
     return(TheFile)
 }
 
-importFeaturesLabelsFiles <- function()
+importFeaturesLabelsFile <- function()
 {
     #import file
     TheFile <- read.table(FeaturesLabelFiles)
@@ -92,7 +92,7 @@ MyFeaturesLabels <- importFeaturesLabelsFiles()
 
 #Data files
 MyTest  <- importDataFiles(TestDataFile,TestDataLabels,TestDataSubject)
-MyTrain <- importDataFiles(TrainDataFile,TrainDataLabels,TrainDataSubject)
+MyTrain <- importDataFile(TrainDataFile,TrainDataLabels,TrainDataSubject)
 
 #Merge the two files and 
 TmpDataResult <- rbind(MyTrain,MyTest)
