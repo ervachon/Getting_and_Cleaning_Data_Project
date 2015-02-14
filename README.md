@@ -6,7 +6,7 @@ This repository containt the script run_analysis.R
 you can run this scirpt using in a R session this command : source("run_analysis.R") 
 
 but before you must download the data on the directory SamsungData
-if the data are on another directory you must modify the variables :
+if the data are on another directory you must modify the path thanks to the variables in the R code :
 - GlobalPath 
 - TestPath   
 - TestDataFile    
@@ -16,10 +16,9 @@ if the data are on another directory you must modify the variables :
 - TrainDataFile    
 - TrainDataLabels  
 - TrainDataSubject 
+- ExportResultFile 
 
-to link to your data
 
-ExportResultFile 
 The original data used can be found there :
 * <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">getdata-projectfiles-UCI HAR Dataset.zip</a> 
 and came from :
