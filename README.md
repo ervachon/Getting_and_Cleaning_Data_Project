@@ -16,6 +16,7 @@ if the data are on another directory you must modify the variables :
 - TrainDataFile    
 - TrainDataLabels  
 - TrainDataSubject 
+
 to link to your data
 
 ExportResultFile 
