@@ -1,9 +1,10 @@
-#
-
+# CodeBook version 1.0
+# 20154/0210
 
 * the library
   * library(data.table)
   * library(dplyr)
+
 * the variables
  * GlobalPath : root path of the data set     
  * TestPath : path of the directory of data test      
@@ -18,10 +19,12 @@
  * ActivityLabelsFile : filename of the activity label file 
  * FeaturesLabelFile : filename of the features label file 
  * ThePattern : regular expression to find the column name of the data result 
+
 * the functions
  * importActivityLabelsFile : function to import the activity label in a data table
  * importFeaturesLabelsFile : function to import the activity label in a data table
  * importDataFiles : import both test and train. It is possible because thes test and train have the same structure
+
 * the data
  * X_test.txt 
  * y_test.txt
@@ -32,7 +35,8 @@
  * activity_labels.txt
  * features.txt
  * independent_tidy_data.txt : name of the result data
-* transformations or work that you performed to clean up the data
+ 
+* Algo performed to clean up the data
  *  import labels
  *  import data
  *  merge test and train
