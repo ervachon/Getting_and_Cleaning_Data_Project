@@ -3,7 +3,7 @@
 
 This repository containt the script run_analysis.R 
 
-you can run this scirpt using in a R session this command : source("run_analysis.R") 
+you can run this scirpt using in a R session this command :  <strong>source("run_analysis.R") </strong> 
 
 but before you must download the data on the directory SamsungData
 if the data are on another directory you must modify the path thanks to the variables in the R code :
