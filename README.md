@@ -1,5 +1,5 @@
-# Getting and Cleaning Data Project
-# V 1.0
+# Getting and Cleaning Data Project V 1.0
+## 2015/02/10
 
 This repository containt the script run_analysis.R 
 
