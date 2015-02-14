@@ -6,7 +6,7 @@ This repository containt the script run_analysis.R
 you can run this scirpt using in a R session this command : source("run_analysis.R") 
 
 but before you must download the data on the directory SamsungData
-if the data are on another directory you must modify the variables to link to the data 
+if the data are on another directory you must modify the variables :
 - GlobalPath 
 - TestPath   
 - TestDataFile    
@@ -16,6 +16,7 @@ if the data are on another directory you must modify the variables to link to th
 - TrainDataFile    
 - TrainDataLabels  
 - TrainDataSubject 
+to link to your data
 
 ExportResultFile 
 The original data used can be found there :
