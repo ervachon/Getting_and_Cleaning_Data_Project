@@ -18,7 +18,7 @@ if the data are on another directory you must modify the path thanks to the vari
 - TrainDataSubject 
 - ExportResultFile 
 
-The data result can be found in the SamsungData directory
+The data result can be found in the SamsungData directory : <strong>independent_tidy_data.txt</strong>
 
 The original data used can be found there :
 * <a href="https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip">getdata-projectfiles-UCI HAR Dataset.zip</a> 
