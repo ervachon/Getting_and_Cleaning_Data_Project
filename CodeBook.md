@@ -1,5 +1,4 @@
-#
-
+# CodeBook version 1.0
 
 * the library
   * library(data.table)
@@ -22,7 +21,7 @@
  * importActivityLabelsFile : function to import the activity label in a data table
  * importFeaturesLabelsFile : function to import the activity label in a data table
  * importDataFiles : import both test and train. It is possible because thes test and train have the same structure
-* the data
+* the data (from the getdata-projectfiles-UCI HAR Dataset.zip)
  * X_test.txt 
  * y_test.txt
  * subject_test.txt
@@ -34,7 +33,7 @@
  * independent_tidy_data.txt : name of the result data
 * transformations or work that you performed to clean up the data
  *  import labels
- *  import data
+ *  import data 
  *  merge test and train
  *  find the column with mean() and std() and extract the columns 
  *  calculate the mean by ActivityName and Subject

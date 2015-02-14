@@ -11,7 +11,7 @@ library(data.table)
 library(dplyr)
 
 # Global path of the files 
-GlobalPath      <- "./UCI HAR Dataset/"
+GlobalPath      <- "./SamsungData/"
 
 # test files
 TestPath        <- paste(GlobalPath,"test/"           , sep ="")
