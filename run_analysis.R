@@ -77,7 +77,7 @@ importDataFiles <- function(DataFile,ColumnFile,SubjectFile)
     TheFileTmp = cbind(TheSubjectFile,TheDataFile,TheColumnFile)
     
     #join with the class
-    TheFile <- inner_join(TheFileTmp, MyActivityLabels, by ="class")
+    TheFile <- inner_join(TheFileTmp, MyActivityLabels, by="class",all=FALSE)
     
     #return the result with the last var in first (ActivityName)
     return(TheFile[,c(ncol(TheFile),c(1:(ncol(TheFile)-1)))])
